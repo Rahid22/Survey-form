@@ -1,0 +1,115 @@
+body {
+    font-family: monospace sans-serif;
+}
+
+#main {
+    background-image: url(https://s27389.pcdn.co/wp-content/uploads/2019/10/retail-innovation-changing-tech-consumer-employee-demands-1024x440.jpeg);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #ffffff;
+    overflow-y: scroll;
+    font-size: 15px;
+}
+
+#main::after {
+    content: "";
+    background-color: rgb(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#main > h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 22px;
+    z-index: 2;
+    position: relative;
+}
+
+#main > p {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    z-index: 2;
+    position: relative;
+}
+
+#main-content {
+    background-color: rgb(30, 30, 90, 0.4);
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px -1px 10px 2px aqua;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#comment {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px fixed;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+label[for=name],
+label[for=email],
+label[for=age],
+label[for=dropdown],
+label[for=comment] {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#video-quality,
+#more-interactions,
+#more-contents,
+fieldset input {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#comment {
+    min-height: 180px;
+}
+
+label[for=comment] {
+    margin-top: 30px;
+}
+
+#submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#submit:hover {
+    background-color: #37af65;
+    cursor: pointer;
+}
